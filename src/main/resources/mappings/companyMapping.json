@@ -1,0 +1,58 @@
+{
+  "com": {
+    "dynamic": "strict",
+    "properties": {
+      "id": {
+        "type": "long"
+      },
+      "name": {
+        "type": "text",
+        "analyzer": "ikIndexAnalyzer",
+        "fields": {
+          "ngram": {
+            "type": "text",
+            "analyzer": "ngramIndexAnalyzer"
+          },
+          "SPY": {
+            "type": "text",
+            "analyzer": "pinyiSimpleIndexAnalyzer"
+          },
+          "FPY": {
+            "type": "text",
+            "analyzer": "pinyiFullIndexAnalyzer"
+          }
+        }
+      },
+      "serviceFinanceEntType": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "serviceSupport": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "serviceEntRat": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  }
+}

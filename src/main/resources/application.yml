@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: my-application #在服务器config/elasticsearch.yml给cluster.name起名
+      cluster-nodes: 192.168.211.128:9300
+      repositories:
+        enabled: true
+
+

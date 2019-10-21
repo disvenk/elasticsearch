@@ -1,0 +1,23 @@
+{
+  "docs": {
+    "properties": {
+      "title": {
+        "type": "completion",
+        "fields": {
+          "pinyin": {
+            "type": "completion",
+            "analyzer": "pinyin_analyzer"
+          },
+          "keyword_pinyin": {
+            "type": "completion",
+            "analyzer": "full_pinyin_letter_analyzer"
+          },
+          "keyword_first_py": {
+            "type": "completion",
+            "analyzer": "first_py_letter_analyzer"
+          }
+        }
+      }
+    }
+  }
+}
